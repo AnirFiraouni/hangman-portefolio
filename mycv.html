@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>CV - Anir Firaouni</title>
+    <link rel="stylesheet" type="text/css" href="../css/menustyle.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1024px;
+            margin: 0 auto;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        /* Reusing the wrapper from your game logic */
+        .cv-container {
+            background: white;
+            padding: 40px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: darkslateblue; border-bottom: 2px solid lightgreen; padding-bottom: 10px; }
+        h2 { color: darkslateblue; margin-top: 20px; }
+        .contact-info { margin-bottom: 20px; font-style: italic; }
+        .section { margin-bottom: 20px; }
+        .job-title { font-weight: bold; font-size: 1.1em; }
+        .date-loc { color: #666; font-size: 0.9em; float: right; }
+        ul.skills { list-style-type: none; padding: 0; }
+        ul.skills li { display: inline-block; background: #e0e0e0; padding: 5px 10px; margin: 3px; border-radius: 4px; }
+        
+        /* Ensure content doesn't overlap with nav */
+        main { padding: 20px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div id="menub">
+            <div></div><div></div><div></div>
+        </div>
+        <ul id="menu">
+            <li><a>My Website</a>
+                <ul class="submenu">
+                    <li><a href="mycv.html">My CV</a></li>
+                    <li><a href="myblog.html">My Blog</a></li>
+                </ul>
+            </li>
+            <li><a href="fun.html">Some Fun</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="cv-container">
+            <header>
+                <h1>Anir Firaouni</h1>
+                <p><strong>Student in Applied Mathematics & Modeling (Engineering School)</strong></p>
+                <div class="contact-info">
+                    📍 Biot, France | 📧 anir.firaouni05@gmail.com | 📞 +33 6 83 79 25 18 <br>
+                    🔗 <a href="https://linkedin.com/in/firaounianir">linkedin.com/in/firaounianir</a>
+                </div>
+                <p>
+                    Student at Polytech Nice Sophia in Applied Mathematics and Modeling, looking for an apprenticeship for September 2026. 
+                    Interested in IT engineering, data science, and modeling.
+                </p>
+            </header>
+
+            <hr>
+
+            <section class="section">
+                <h2>🎓 Education</h2>
+                <div>
+                    <span class="job-title">Polytech Nice Sophia - Biot</span>
+                    <span class="date-loc">2025 - 2028</span>
+                    <p>Engineering Degree (Bachelor equivalent) in Applied Mathematics & Modeling.</p>
+                </div>
+                <div>
+                    <span class="job-title">Polytech Nice Sophia - Biot</span>
+                    <span class="date-loc">2023 - 2025</span>
+                    <p>Integrated Preparatory Cycle (PEIP). <br>
+                    <em>Project: Python mini-game creation.</em></p>
+                </div>
+                <div>
+                    <span class="job-title">Lycée Léon l'Africain - Casablanca</span>
+                    <span class="date-loc">2022</span>
+                    <p>French Baccalaureate (General) - Mention Bien.<br>
+                    Specialties: Mathematics & Physics-Chemistry (Option: Expert Maths).</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>🛠 Skills</h2>
+                <ul class="skills">
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>HTML / CSS</li>
+                    <li>MatLab</li>
+                    <li>Linux</li>
+                    <li>SQL / Excel</li>
+                    <li>Teamwork</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>💼 Professional Experience</h2>
+                <div>
+                    <span class="job-title">Sales Assistant (Multimedia/Electronics)</span>
+                    <span class="date-loc">2024 (1 month)</span>
+                    <p><em>Du Coq à l'âne, Le Perthus</em><br>
+                    • Technical advice and sales of electronic products.<br>
+                    • Stock management and cashier duties.</p>
+                </div>
+                <div>
+                    <span class="job-title">Observation Internship (Hospitality)</span>
+                    <span class="date-loc">2019</span>
+                    <p><em>Royal Atlas & Spa, Agadir</em><br>
+                    • Discovered customer service, management, and hotel marketing.</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>🌍 Languages & Interests</h2>
+                <p><strong>Languages:</strong> French/Arabic/Amazigh (Native), English (B2/C1), Korean (Learning), Spanish (Learning).</p>
+                <p><strong>Interests:</strong> Music, Swimming, Travel, Sports, Horse Riding, Tennis.</p>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
