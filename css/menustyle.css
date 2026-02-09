@@ -42,7 +42,9 @@ nav a:hover {
     display: none;
 }
 
-nav li:hover > ul {
+nav li:hover > ul,
+nav li:focus-within > ul,
+nav li:active > ul {
     display: block;
     margin-left: -2px;
     padding-left: 0px;
