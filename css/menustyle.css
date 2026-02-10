@@ -49,3 +49,11 @@ nav li:active > ul {
     margin-left: -2px;
     padding-left: 0px;
 }
+nav li {
+    background-color: rgba(30, 41, 59, 0.8); /* Semi-transparent */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+nav a {
+    color: #f8fafc; /* Texte blanc */
+}
