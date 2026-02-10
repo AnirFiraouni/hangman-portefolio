@@ -1,36 +1,35 @@
-# 🎮 Hangman Game & Interactive Portfolio
+# 🚀 Interactive Engineering Portfolio & Hangman Game
 
-Welcome to my web development project! This repository hosts a fully functional, interactive **Hangman Game** and my digital **Curriculum Vitae**.
+Bienvenue sur mon portfolio personnel. Ce dépôt a évolué pour devenir un **Hub numérique** centralisant mes ambitions professionnelles, mes compétences en ingénierie et mes projets interactifs.
 
-🚀 **[Play the Game Live Here!](https://anirfiraouni.github.io/hangman-portefolio/)**
+👉 **[Consulter mon Portfolio en Direct](https://anirfiraouni.github.io/hangman-portefolio/)**
 
 ---
 
-## 🕹️ Project Overview
+## 🏗️ Architecture du Projet
 
-This project was built to practice DOM manipulation, asynchronous JavaScript, and CSS styling. It features:
+Le site est structuré pour offrir une navigation fluide entre mon profil d'ingénieur et mes réalisations techniques :
 
-* **Dynamic Gameplay:** The game fetches random words from an API based on the length you choose (5, 6, or 7 letters).
-* **SVG Animations:** The "Hangman" is drawn step-by-step using SVG lines for every wrong guess.
-* **Timer Logic:** A countdown timer (15s, 30s, 60s) adds pressure to the game!
-* **Responsive Design:** Optimized for both Desktop 💻 and Mobile 📱.
+* **Accueil (`index.html`) :** La page de présentation principale mettant en avant mon parcours à **Polytech Nice Sophia** et mes objectifs en Data Science et Modélisation.
+* **Le Jeu du Pendu (`HangMan.html`) :** Une application web interactive démontrant des compétences en algorithmie et manipulation du DOM.
+* **Mon CV (`mycv.html`) :** Une version interactive de mon parcours académique et de mes expériences professionnelles.
+* **Projets API :** Intégration de travaux comme le projet Spotify et l'utilisation d'APIs de mots aléatoires.
 
-## 📂 Repository Structure
+## 🕹️ Focus Technique: Hangman Game
 
-* `index.html` - The main game interface.
-* `mycv.html` - My professional resume (Education, Skills, Experience).
-* `js/js4game.js` - Game logic (Fetch API, Event Listeners, Timer).
-* `css/` - Styling for the game and navigation menus.
+Le jeu intégré illustre plusieurs concepts fondamentaux du développement front-end :
+* **Asynchronisme :** Utilisation de `fetch` pour récupérer des mots depuis une API externe selon la difficulté choisie.
+* **Gestion d'État :** Un système complet de chronomètre, de score et de gestion des erreurs.
+* **Graphismes SVG :** Le pendu est dessiné dynamiquement via des éléments SVG synchronisés avec les erreurs de l'utilisateur.
 
-## 🛠️ Technologies Used
+## 🛠️ Technologies & Outils
 
-* **HTML5 & CSS3** (Flexbox/Grid)
-* **JavaScript (ES6+)**
-* **Fetch API** (for retrieving mystery words)
-* **Git & GitHub Pages** (for version control and hosting)
+* **Langages :** HTML5, CSS3 (Modern Dark Mode) et JavaScript (ES6+).
+* **Hébergement :** Déployé via GitHub Pages avec une gestion de version stricte via Git.
+* **Design :** Interface ergonomique avec un menu de navigation multi-niveaux pour une expérience utilisateur optimale.
 
 ## 👨‍💻 Author
 
 **Anir Firaouni** *Engineering Student at Polytech Nice Sophia - Applied Mathematics & Modeling*
 
-[LinkedIn](https://www.linkedin.com/in/firaounianir/) | [GitHub](https://github.com/AnirFiraouni)
+[LinkedIn](https://www.linkedin.com/in/firaounianir/) 
