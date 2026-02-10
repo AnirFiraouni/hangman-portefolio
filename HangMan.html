@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Fun Time!</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./css/fun.css">
+        <link rel="stylesheet" type="text/css" href="./css/menustyle.css ">
+        <script src="./js/js4game.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <div id="menub">
+                <div></div><div></div><div></div>
+            </div>
+            <ul id="menu">
+                <li><a href="#" tabindex="0"> My Website</a>
+                    <ul class="submenu">
+                        <li><a href="mycv.html" target="_blank">My CV</a></li>
+                        <li><a href="https://github.com/AnirFiraouni" target="_blank">My GitHub</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Mon PortFolio</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>The Hangman Game</h1>
+            <p>Made By Firaouni Anir</p>
+            <div id="duration">
+                <p>Select the time limit :</p>
+                
+                <input checked="checked" type="radio" name="gameDuration" value="15" > 15 
+                <input type="radio" name="gameDuration" value="30" > 30  
+                <input type="radio" name="gameDuration" value="60"> 60 
+            </div>
+            <div id="nombre">
+                <p> Select the word length :</p>
+                <input checked="checked" type="radio" name="lettree" value="5" > 5
+                <input type="radio" name="lettree" value="6" > 6
+                <input type="radio" name="lettree" value="7"> 7 
+
+            </div>
+        </header>
+        <div id="gameContainer">
+            <p id="newgame"><input type="button" value="New Game"></p>
+            <div id="gimage">
+                <svg width="258" height="400">
+                    <rect y="380" x="2" width="250" height="10" style="fill:yellow;stroke-width:4;stroke:black" />
+
+                    <line x1="20" y1="380" x2="20" y2="10" style="stroke:black;stroke-width:4"/>
+
+                    <line x1="18" y1="10" x2="140" y2="10" style="stroke:black;stroke-width:4"/>
+
+                    <line id="i1" x1="138" y1="10" x2="138" y2="50" style="stroke:black;stroke-width:4"/>
+                    
+                    <circle id="i2" cx="138" cy="80" r="30" stroke="black" stroke-width="4" fill="yellow" />
+
+                    <line id="i3" x1="138" y1="110" x2="138" y2="250" style="stroke:black;stroke-width:4"/>
+
+                    <line id="i4" x1="138" y1="140" x2="100" y2="200" style="stroke:black;stroke-width:4"/>
+
+                    <line id="i5" x1="138" y1="140" x2="178" y2="200" style="stroke:black;stroke-width:4"/>
+
+                    <line id="i6" x1="138" y1="250" x2="100" y2="310" style="stroke:black;stroke-width:4"/>
+
+                    <line id="i7" x1="138" y1="250" x2="178" y2="310" style="stroke:black;stroke-width:4"/>
+                </svg>
+            </div>
+            <div id="gcontrols">
+                <p>Click on a character and guess the word!</p>
+                <p id="word2guess"></p>
+                <p id="gchars">
+                    <span>A</span>
+                    <span>B</span>
+                    <span>C</span>
+                    <span>D</span>
+                    <span>E</span>
+                    <span>F</span>
+                    <span>G</span>
+                    <span>H</span>
+                    <span>I</span>
+                    <span>J</span>
+                    <span>K</span>
+                    <span>L</span>
+                    <span>M</span>
+                    <span>N</span>
+                    <span>O</span>
+                    <span>P</span>
+                    <span>Q</span>
+                    <span>R</span>
+                    <span>S</span>
+                    <span>T</span>
+                    <span>U</span>
+                    <span>V</span>
+                    <span>W</span>
+                    <span>X</span>
+                    <span>Y</span>
+                    <span>Z</span>
+                </p>
+                <p id="restartb"><input type="button" value="Reset Game"></p>
+                <p id= "timer">  Temps restant : <span id=target>0</span>  </p>
+            </div>
+        </div>
+    </body>
+</html>
