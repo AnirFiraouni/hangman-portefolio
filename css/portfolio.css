@@ -1,19 +1,17 @@
-/* Palette de couleurs Dark Premium */
+/* Palette Dark Mode */
 :root {
-    --bg-dark: #0f172a;       /* Bleu-nuit très sombre */
-    --card-bg: #1e293b;       /* Gris-bleu pour les cartes */
-    --text-primary: #f8fafc;  /* Blanc cassé pour le texte */
-    --text-secondary: #94a3b8; /* Gris pour les sous-titres */
-    --accent: #10b981;        /* Vert émeraude (proche de ton lightgreen) */
-    --accent-hover: #34d399;
+    --bg-dark: #020617;       /* Noir profond */
+    --card-bg: #1e293b;       /* Gris-bleu sombre */
+    --text-main: #f8fafc;     /* Blanc cassé */
+    --text-dim: #94a3b8;      /* Gris pour descriptions */
+    --accent: #10b981;        /* Vert Émeraude */
 }
 
 body {
     background-color: var(--bg-dark);
-    color: var(--text-primary);
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text-main);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    line-height: 1.6;
 }
 
 .container {
@@ -22,40 +20,24 @@ body {
     padding: 40px 20px;
 }
 
-/* Hero Section stylisée */
+/* Hero Section avec dégradé sombre */
 #hero {
     text-align: center;
-    padding: 80px 20px;
-    background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #1e1b4b 0%, #020617 100%);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 24px;
-    margin-bottom: 60px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    margin-bottom: 50px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
 }
 
 #hero h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     margin: 0;
-    background: linear-gradient(to right, #fff, #94a3b8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
 }
 
-.tagline {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    margin-top: 10px;
-}
-
-/* Titres de sections */
-h2 {
-    font-size: 1.8rem;
-    border-left: 4px solid var(--accent);
-    padding-left: 15px;
-    margin-bottom: 30px;
-}
-
-/* Grille de projets ergonomique */
+/* Grille de projets */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -67,40 +49,21 @@ h2 {
     padding: 30px;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.05);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    display: flex;
-    flex-direction: column;
+    transition: 0.3s;
 }
 
 .project-card:hover {
     transform: translateY(-10px);
     border-color: var(--accent);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-.project-card h3 {
-    margin-top: 0;
-    color: var(--accent);
-}
-
-.project-card p {
-    color: var(--text-secondary);
-    flex-grow: 1; /* Aligne les boutons en bas même si le texte est court */
-}
-
-/* Boutons modernes */
 .btn {
     display: inline-block;
     background: var(--accent);
     color: #000;
-    padding: 12px 24px;
-    border-radius: 12px;
+    padding: 10px 25px;
+    border-radius: 10px;
     text-decoration: none;
-    font-weight: 600;
-    text-align: center;
-    transition: background 0.2s;
-}
-
-.btn:hover {
-    background: var(--accent-hover);
+    font-weight: bold;
+    margin-top: 15px;
 }
