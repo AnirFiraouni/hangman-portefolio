@@ -2,34 +2,77 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>CV - Anir Firaouni</title>
-    <link rel="stylesheet" type="text/css" href="./css/menustyle.css">
+    <title>CV Anir Firaouni</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 1024px;
-            margin: 0 auto;
-            background-color: #f4f4f4;
+        /* Styles pour que le CV tienne sur une page et soit élégant */
+        body { 
+            font-family: 'Arial', sans-serif; 
+            line-height: 1.3; 
+            color: #222; 
+            max-width: 21cm; /* Largeur A4 */
+            margin: 0 auto; 
+            padding: 15px 30px; 
+            font-size: 10.5pt; 
+        }
+        h1 { 
+            text-align: center; 
+            margin: 0 0 5px 0; 
+            color: #1a3b5c; 
+            font-size: 22pt; 
+            letter-spacing: 1px;
+        }
+        .subtitle { 
+            text-align: center; 
+            font-weight: bold; 
+            margin-bottom: 8px; 
+            font-size: 11pt; 
             color: #333;
         }
-        /* Reusing the wrapper from your game logic */
-        .cv-container {
-            background: white;
-            padding: 40px;
-            margin-top: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        .contact { 
+            text-align: center; 
+            margin-bottom: 12px; 
+            font-size: 9.5pt; 
+            color: #555;
         }
-        h1 { color: darkslateblue; border-bottom: 2px solid lightgreen; padding-bottom: 10px; }
-        h2 { color: darkslateblue; margin-top: 20px; }
-        .contact-info { margin-bottom: 20px; font-style: italic; }
-        .section { margin-bottom: 20px; }
-        .job-title { font-weight: bold; font-size: 1.1em; }
-        .date-loc { color: #666; font-size: 0.9em; float: right; }
-        ul.skills { list-style-type: none; padding: 0; }
-        ul.skills li { display: inline-block; background: #e0e0e0; padding: 5px 10px; margin: 3px; border-radius: 4px; }
-        
-        /* Ensure content doesn't overlap with nav */
-        main { padding: 20px; }
+        h2 { 
+            border-bottom: 1.5px solid #1a3b5c; 
+            color: #1a3b5c; 
+            padding-bottom: 2px; 
+            margin-top: 12px; 
+            margin-bottom: 8px; 
+            font-size: 12pt; 
+            text-transform: uppercase;
+        }
+        .item-header { 
+            display: flex; 
+            justify-content: space-between; 
+            font-weight: bold; 
+            margin-bottom: 2px; 
+        }
+        .item-sub { 
+            font-style: italic; 
+            margin-bottom: 4px; 
+            font-size: 10pt;
+            color: #444;
+        }
+        ul { 
+            margin-top: 0; 
+            padding-left: 18px; 
+            margin-bottom: 8px; 
+        }
+        li { 
+            margin-bottom: 2px; 
+        }
+        p { 
+            margin-top: 0; 
+            margin-bottom: 8px; 
+            text-align: justify;
+        }
+        .skills-container {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
     </style>
 </head>
 <body>
@@ -47,82 +90,85 @@
             <li><a href="https://github.com/AnirFiraouni">Mon GitHub</a></li>
         </ul>
     </nav>
+    <h1>ANIR FIRAOUNI</h1>
+    <div class="subtitle">Étudiant en école d'Ingénieur, spécialité Mathématiques Appliquées et Modélisation (MAM)</div>
+    
+    <div class="contact">
+        📍 Biot, Résidence Thésa &nbsp;|&nbsp; 📞 +33 6 83 79 25 18 &nbsp;|&nbsp; ✉️ anir.firaouni05@gmail.com <br>
+        🔗 linkedin.com/in/firaounianir &nbsp;|&nbsp; 💻 github.com/AnirFiraouni
+    </div>
 
-    <main>
-        <div class="cv-container">
-            <header>
-                <h1>Anir Firaouni</h1>
-                <p><strong>Student in Applied Mathematics & Modeling (Engineering School)</strong></p>
-                <div class="contact-info">
-                    📍 Biot, France | 📧 anir.firaouni05@gmail.com | 📞 +33 6 83 79 25 18 <br>
-                    🔗 <a href="https://linkedin.com/in/firaounianir">linkedin.com/in/firaounianir</a>
-                </div>
-                <p>
-                    Student at Polytech Nice Sophia in Applied Mathematics and Modeling, looking for an apprenticeship for September 2026. 
-                    Interested in IT engineering, data science, and modeling.
-                </p>
-            </header>
+    <h2>Profil Personnel</h2>
+    <p>Étudiant à Polytech Nice Sophia en Mathématiques Appliquées et Modélisation, je recherche une alternance pour Septembre 2026. Intéressé par l'ingénierie informatique et les mathématiques appliquées, je souhaite orienter mon parcours vers la data science et les domaines liés à l'analyse et à la modélisation des données.</p>
 
-            <hr>
+    <h2>Formations</h2>
+    
+    <div class="item-header">
+        <span>Polytech Nice Sophia – Biot</span>
+        <span>2025 – 2028</span>
+    </div>
+    <div class="item-sub">École d'ingénieur, diplôme équivalent à un Bachelor en Mathématiques Appliquées et Modélisation.</div>
 
-            <section class="section">
-                <h2>🎓 Education</h2>
-                <div>
-                    <span class="job-title">Polytech Nice Sophia - Biot</span>
-                    <span class="date-loc">2025 - 2028</span>
-                    <p>Engineering Degree (Bachelor equivalent) in Applied Mathematics & Modeling.</p>
-                </div>
-                <div>
-                    <span class="job-title">Polytech Nice Sophia - Biot</span>
-                    <span class="date-loc">2023 - 2025</span>
-                    <p>Integrated Preparatory Cycle (PEIP). <br>
-                    <em>Project: Python mini-game creation.</em></p>
-                </div>
-                <div>
-                    <span class="job-title">Lycée Léon l'Africain - Casablanca</span>
-                    <span class="date-loc">2022</span>
-                    <p>French Baccalaureate (General) - Mention Bien.<br>
-                    Specialties: Mathematics & Physics-Chemistry (Option: Expert Maths).</p>
-                </div>
-            </section>
+    <div class="item-header">
+        <span>Polytech Nice Sophia – Biot</span>
+        <span>2023 – 2025</span>
+    </div>
+    <div class="item-sub">Cycle préparatoire intégré PEIP.</div>
+    <ul>
+        <li><strong>Projet :</strong> Introduction à Python, Création d'un mini-jeu avec un code Python incluant diverses librairies.</li>
+    </ul>
 
-            <section class="section">
-                <h2>🛠 Skills</h2>
-                <ul class="skills">
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>JavaScript</li>
-                    <li>HTML / CSS</li>
-                    <li>MatLab</li>
-                    <li>Linux</li>
-                    <li>SQL / Excel</li>
-                    <li>Teamwork</li>
-                </ul>
-            </section>
+    <div class="item-header">
+        <span>Lycée Léon l'Africain – Casablanca</span>
+        <span>2022</span>
+    </div>
+    <div class="item-sub">Baccalauréat Français – Voie Générale (Mention Bien)</div>
+    <ul>
+        <li><strong>Spécialités :</strong> Mathématiques & Physique-Chimie | <strong>Option :</strong> Maths Expertes.</li>
+    </ul>
 
-            <section class="section">
-                <h2>💼 Professional Experience</h2>
-                <div>
-                    <span class="job-title">Sales Assistant (Multimedia/Electronics)</span>
-                    <span class="date-loc">2024 (1 month)</span>
-                    <p><em>Du Coq à l'âne, Le Perthus</em><br>
-                    • Technical advice and sales of electronic products.<br>
-                    • Stock management and cashier duties.</p>
-                </div>
-                <div>
-                    <span class="job-title">Observation Internship (Hospitality)</span>
-                    <span class="date-loc">2019</span>
-                    <p><em>Royal Atlas & Spa, Agadir</em><br>
-                    • Discovered customer service, management, and hotel marketing.</p>
-                </div>
-            </section>
+    <h2>Expériences Professionnelles & Projets</h2>
 
-            <section class="section">
-                <h2>🌍 Languages & Interests</h2>
-                <p><strong>Languages:</strong> French/Arabic/Amazigh (Native), English (B2/C1), Korean (Learning), Spanish (Learning).</p>
-                <p><strong>Interests:</strong> Music, Swimming, Travel, Sports, Horse Riding, Tennis.</p>
-            </section>
-        </div>
-    </main>
+    <div class="item-header">
+        <span>Projet Machine Learning : Recommandeur de Musique Spotify</span>
+        <span>2026</span>
+    </div>
+    <div class="item-sub">Outils : Python, Streamlit, Scikit-learn</div>
+    <ul>
+        <li>Conception d'un système de recommandation basé sur l'algorithme des K-Plus Proches Voisins (KNN).</li>
+        <li>Prétraitement et analyse de données à partir d'un dataset.</li>
+        <li>Déploiement d'une application web interactive via Streamlit Cloud.</li>
+    </ul>
+
+    <div class="item-header">
+        <span>Projet Portfolio Digital & Vitrine Web</span>
+        <span>2026</span>
+    </div>
+    <div class="item-sub">Outils : HTML5, CSS3, JavaScript, GitHub</div>
+    <ul>
+        <li>Développement d'un hub central regroupant mes projets techniques et mon parcours.</li>
+        <li>Hébergement et gestion de version avec GitHub.</li>
+    </ul>
+
+    <div class="item-header">
+        <span>Vendeur polyvalent – Accessoires électroniques (Du Coq à l'Âne, Le Perthus)</span>
+        <span>2024 (1 mois)</span>
+    </div>
+    <ul>
+        <li>Conseil technique et vente de produits électroniques (téléphonie, automobile).</li>
+        <li>Gestion des stocks, mise en rayon et encaissement.</li>
+        <li>Développement de l'aisance relationnelle et de l'adaptabilité face à des demandes variées.</li>
+    </ul>
+
+    <h2>Compétences</h2>
+    <div class="skills-container">
+        <div><strong>Techniques :</strong> Python, Java, JavaScript, HTML5, CSS3, Linux, MatLab, GeoGebra, Streamlit, GitHub, Pack Office, Canva.</div>
+        <div><strong>Transversales :</strong> Travail d'équipe, Communication, Adaptabilité, Assiduité.</div>
+        <div><strong>Langues :</strong> Français/Arabe/Amazigh (Maternelles), Anglais (B2-C1), Coréen/Espagnol (En apprentissage).</div>
+    </div>
+
+    <h2>Centres d'intérêt</h2>
+    <p>Musique, Natation, Voyage, Sport, Équitation, Tennis.</p>
+
 </body>
 </html>
